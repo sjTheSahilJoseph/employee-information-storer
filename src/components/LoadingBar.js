@@ -26,7 +26,7 @@ const Loading = () => {
     };
   }, [progress]);
 
-  return <LoadingBar color="#f15946" progress={progress} />;
+  return <LoadingBar color="#ffaa11" progress={progress} />;
 };
 
 export default Loading;
