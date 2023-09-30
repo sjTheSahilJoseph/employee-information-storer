@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Employee from "./components/Employee";
 import AddEmployee from "./components/AddEmployee";
+import EditEmployee from "./components/EditEmployee";
 
 function App() {
 
@@ -45,10 +46,10 @@ function App() {
 
         {
           employees.map((employee) => {
-
+            const editEmployee = <EditEmployee updateEmployee={updateEmployee} name={employee.name} role={employee.role} id={employee.id} />
             return (
 
-              <Employee updateEmployee={updateEmployee} id={employee.id} name={employee.name} image={employee.image} role={employee.role} key={employee.id} />)
+              <Employee editEmployee={editEmployee} id={employee.id} name={employee.name} image={employee.image} role={employee.role} key={employee.id} />)
 
           })
 
