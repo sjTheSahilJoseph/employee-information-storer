@@ -8,8 +8,14 @@
 # testing
 /coverage
 
+public
+src
+package.json
+README.md 
+tailwind.config.js
+
 # production
-build
+
 
 # misc
 .DS_Store
